@@ -154,7 +154,7 @@ if (app.ios) {
         applicationOpenURLSourceApplicationAnnotation(application, url, sourceApplication, annotation) {
 
             try {
-                if (url.scheme == "org.nativescript.demo.payments") {
+                if (url.scheme == "org.nativescript.demo.payments") {  // should be same as CFBundleURLSchemes value too.
                     BTAppSwitch.handleOpenURLSourceApplication(url, sourceApplication);
                     return true;
                 }

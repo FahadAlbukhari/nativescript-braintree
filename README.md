@@ -131,6 +131,7 @@ This scheme must start with your app's Bundle ID and be dedicated to Braintree a
 Now open your `app.ts` or `main.ts` (for Angular) file under `app` directory. If you are using webpack for angular then it will be `main.aot.ts`. Add following lines before `application.start({ moduleName: "main-page" });` or `platformNativeScriptDynamic().bootstrapModule(AppModule);` or `platformNativeScript().bootstrapModuleFactory(AppModuleNgFactory);`
 
 ```
+import "./bundle-config";
 import * as app from "application";
 declare var UIResponder, UIApplicationDelegate, BTAppSwitch;
 
